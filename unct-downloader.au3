@@ -110,6 +110,7 @@ Func Reboot()
 ;~ 		ControlClick("","","[CLASS:Button; INSTANCE:1]")
 ;~ 	EndIf
 
-	If @error = 3 Or @error = 7 Or $iWaiting > 120 Then	ShellExecute("Terminator.bat")
+	If @error = 3 Or @error = 7 Or $iWaiting > 120 Then
+		ShellExecute("Terminator.bat")
 
 EndFunc
